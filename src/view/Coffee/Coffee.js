@@ -17,9 +17,10 @@ const Coffee = () => {
     
       <div className='coffee-container my-5 '>
 
-        <div className='h-1/3 border-2 rounded-lg w-1/3 bg-white me-4'>
+        <div className='h-1/3 border-2 rounded-3xl  bg-white me-4 mb-6 ' style={{width: "450px"}}>
           <div className='bg-gray-200 py-2 px-6 text-left	position: relative'>
-        <MailIcon />  <span className='font-bold  '>Coffee?</span> <span className='text-gray-700'> Mail from Marisa Lu</span>
+        <MailIcon />  <span className='font-bold  '>Coffee?</span> <span className='text-gray-700'> Mail from 
+         Marisa Lu</span>
         <img src={Mic} className='h-3.5	position: absolute right-8 top-3 ' />
         </div>
 
@@ -34,9 +35,9 @@ const Coffee = () => {
 
       <p className='my-3'>Marisa</p> <hr/>
 
-      <button type='button' className='rounded-2xl border-2 me-3 mt-3 py-1 px-5 bg-gray-200'>Reply</button>
-      <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-5 bg-gray-200'>Forward</button>
-      <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-5 bg-gray-200'>Delete</button>
+      <button type='button' className='rounded-2xl border-2 me-3 mt-3 py-1 px-5 bg-gray-200 text-sm'>Reply</button>
+      <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-5 bg-gray-200 text-sm'>Forward</button>
+      <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-5 bg-gray-200 text-sm'>Delete</button>
 
       <div className='flex mt-5 '>
       <img src={action} className='h-3 m-1 ' /> 
@@ -47,7 +48,7 @@ const Coffee = () => {
 
         </div>
 
-        <div className='h-3/5 border-2 rounded-lg w-1/3 bg-white  mx-2'>
+        <div className='h-1/3 border-2 rounded-3xl  bg-white mb-6 mx-2' style={{width: "450px"}}>
           <div className='bg-gray-200 p-2 text-left	position: relative'>
          <span className='font-bold  ms-6'>See my availability : today</span>
         <img src={Mic} className='h-3.5	position: absolute right-8 top-3 ' />
@@ -59,14 +60,14 @@ const Coffee = () => {
 
       <p>Would you like to create an event for Coffee with Marisa at 11 AM?</p>
 
-      <img src={chart} className='w-full h-56 my-5 rounded-lg' />
+      <img src={chart} className='w-full h-48 my-6 rounded-lg' />
       
      <hr/>
 
       <button type='button' className='rounded-2xl border-2 me-3 mt-3 py-1 px-2 bg-gray-200 text-sm'>Create Event</button>
       <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-2 bg-gray-200 text-sm'>Edit Event</button>
       <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-2 bg-gray-200 text-sm'>Full Calender</button>
-      <button type='button'  className='rounded-2xl border-1 me-3 py-1 px-2  text-sm'>Dismiss</button>
+      <button type='button'  className='rounded-2xl border-1 me-3 py-1 px-1  text-sm'>Dismiss</button>
 
       <div className='flex mt-5 '>
       <img src={action} className='h-3 m-1 ' /> 
@@ -77,7 +78,7 @@ const Coffee = () => {
 
         </div>
 
-        <div className='h-1/3 border-2 rounded-lg w-1/3 bg-white  mx-4'>
+        <div className='h-1/3 border-2 rounded-3xl bg-white mb-6 mx-4' style={{width: "450px"}}>
           <div className='bg-gray-200 py-2 px-6 	position: relative text-left '>
           <img src={Pin} className='h-4	position: absolute top-3 ' />
          <span className='font-bold ms-6'>Philz Coffee</span> <span className='text-gray-700'>. Location</span>
@@ -86,7 +87,7 @@ const Coffee = () => {
      <div className='p-1'>
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55908569.77857281!2d-12.272493600000024!3d31.2099701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5a777f9a75d%3A0xa89ec96a0e40fbeb!2sPhilz%20Coffee!5e0!3m2!1sen!2sin!4v1704784377508!5m2!1sen!2sin" width="100%" height="180"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
      </div>
-        <div className='text-left px-6 py-4'>
+        <div className='text-left px-4 py-4'>
         
       
         <h1 className='font-bold text-2xl mb-2'>Philz Coffee</h1>
@@ -100,10 +101,10 @@ const Coffee = () => {
 
        <hr/>
 
-      <button type='button' className='rounded-2xl border-2 w-32 me-2 mt-3 py-1  bg-gray-200 text-sm position: relative'> <img src={send} 
-       className='h-3 position: absolute top-1.5 px-1'/>  Get directions</button>
+      <button type='button' className='rounded-2xl border-2 me-2 mt-3 py-1  bg-gray-200 text-sm position: relative' style={{width: "122px"}}> <img src={send} 
+       className='h-3  position: absolute top-1.5 px-1'/>  Get directions</button>
       <button type='button'  className='rounded-2xl border-2 me-2 py-1 px-2 bg-gray-200 text-sm'>See details</button>
-      <button type='button'  className='rounded-2xl border-2 me-2 py-1 px-1 bg-gray-200 text-sm'>Find more cafes nearby</button>
+      <button type='button'  className='rounded-2xl border-2 me-2 py-1 px-2 bg-gray-200 text-sm'>Find more cafes nearby</button>
       
 
       <div className='flex mt-5 '>

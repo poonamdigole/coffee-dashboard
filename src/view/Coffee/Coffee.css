@@ -1,14 +1,15 @@
 .coffee-container{
     display: flex;
-
-    justify-content: space-evenly; 
+     justify-content: space-evenly; 
+     flex-direction: row;
+     /* flex-wrap: wrap; */
 }
 
 @media screen and (max-width: 1200px) {
     .coffee-container{
-          display: block;
-          width: 1300px;
-          margin-bottom: 20px;
-    
+          flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         /* margin: 0 50px; */
     }
 }
