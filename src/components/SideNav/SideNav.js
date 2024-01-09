@@ -23,6 +23,8 @@ import PostGrad from '../../view/Post-grad/Post-grad';
 import Feedback from '../../view/Feedback/Feedback';
 import Launch from '../../view/Launch/Launch';
 import MsgIcon from "./messenger.png"
+import twitter from "./twitter.png"
+import add from "./plus.png"
 
 const drawerWidth = 240;
 
@@ -139,6 +141,27 @@ export default function SideNav() {
         <Divider />
         <List>
          
+        <ListItem  disablePadding sx={{ display: 'block' }}  >
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <img src={add} style={{height:"15px"}} className='mx-1'/>
+                </ListItemIcon>
+                <ListItemText primary=" New Flow"  />
+              </ListItemButton>
+            </ListItem>
+
             <ListItem  disablePadding sx={{ display: 'block' }} onClick={() => setMenudata("Coffee")} >
               <ListItemButton
                 sx={{
@@ -280,7 +303,7 @@ export default function SideNav() {
                     justifyContent: 'center',
                   }}
                 >
-                <img src={MsgIcon} style={{height:"22px"}}/>
+                <img src={twitter} style={{height:"22px"}}/>
                 </ListItemIcon>
                 <ListItemText primary="Danny Trinh"  />
               </ListItemButton>

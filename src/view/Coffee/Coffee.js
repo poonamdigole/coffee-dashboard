@@ -2,16 +2,23 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import MailIcon from '@mui/icons-material/Mail';
 import Mic from "./microphone.png"
+import Pin from './pin.png'
+import action from './category.png'
+import send from "./send.png"
+import chart from "./chart.png"
+// import ChartBar from '../../components/ChartBar/ChartBar';
 
 const Coffee = () => {
   return (
     <>
       <Box height={100} />
+   
+    
       <div className='flex justify-between mx-0 '>
 
         <div className='h-1/3 border-2 rounded-lg w-1/3 bg-white me-4'>
-          <div className='bg-gray-200 p-2 	position: relative'>
-        <MailIcon />  <span>Coffee?</span> <span className='text-gray-700'> Mail from Marisa Lu</span>
+          <div className='bg-gray-200 py-2 px-6 text-left	position: relative'>
+        <MailIcon />  <span className='font-bold  '>Coffee?</span> <span className='text-gray-700'> Mail from Marisa Lu</span>
         <img src={Mic} className='h-3.5	position: absolute right-8 top-3 ' />
         </div>
 
@@ -30,14 +37,82 @@ const Coffee = () => {
       <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-5 bg-gray-200'>Forward</button>
       <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-5 bg-gray-200'>Delete</button>
 
-      <p className='mt-5 text-gray-700 text-sm'>More actions</p>
+      <div className='flex mt-5 '>
+      <img src={action} className='h-3 m-1 ' /> 
+      <p className=' text-gray-700  text-sm ms-1 '>  More actions</p>
+      </div>
+
       </div>
 
         </div>
 
-       
+        <div className='h-3/5 border-2 rounded-lg w-1/3 bg-white  mx-2'>
+          <div className='bg-gray-200 p-2 text-left	position: relative'>
+         <span className='font-bold  ms-6'>See my availability : today</span>
+        <img src={Mic} className='h-3.5	position: absolute right-8 top-3 ' />
+        </div>
 
+        <div className='text-left p-6'>
+       
+        <h1 className='font-bold text-2xl mb-3'>Available until 1 PM</h1>
+
+      <p>Would you like to create an event for Coffee with Marisa at 11 AM?</p>
+
+      <img src={chart} className='w-full h-56 my-5 rounded-lg' />
       
+     <hr/>
+
+      <button type='button' className='rounded-2xl border-2 me-3 mt-3 py-1 px-2 bg-gray-200 text-sm'>Create Event</button>
+      <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-2 bg-gray-200 text-sm'>Edit Event</button>
+      <button type='button'  className='rounded-2xl border-2 me-3 py-1 px-2 bg-gray-200 text-sm'>Full Calender</button>
+      <button type='button'  className='rounded-2xl border-1 me-3 py-1 px-2  text-sm'>Dismiss</button>
+
+      <div className='flex mt-5 '>
+      <img src={action} className='h-3 m-1 ' /> 
+      <p className=' text-gray-700  text-sm ms-1 '>  More actions</p>
+      </div>
+
+      </div>
+
+        </div>
+
+        <div className='h-1/3 border-2 rounded-lg w-1/3 bg-white  mx-4'>
+          <div className='bg-gray-200 py-2 px-6 	position: relative text-left '>
+          <img src={Pin} className='h-4	position: absolute top-3 ' />
+         <span className='font-bold ms-6'>Philz Coffee</span> <span className='text-gray-700'>. Location</span>
+        <img src={Mic} className='h-3.5	position: absolute right-8 top-3 ' />
+        </div>
+     <div className='p-1'>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55908569.77857281!2d-12.272493600000024!3d31.2099701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5a777f9a75d%3A0xa89ec96a0e40fbeb!2sPhilz%20Coffee!5e0!3m2!1sen!2sin!4v1704784377508!5m2!1sen!2sin" width="440" height="180"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+     </div>
+        <div className='text-left px-6 py-4'>
+        
+      
+        <h1 className='font-bold text-2xl mb-2'>Philz Coffee</h1>
+      
+      <p className='my-3 font-semibold'>Custom-blended java in a casual setting.</p>
+
+      <p className='font-light mb-2'>20686 Stevens Creek Blvd
+        <br/>
+        Cupertino, CA 95014
+      </p>
+
+       <hr/>
+
+      <button type='button' className='rounded-2xl border-2 w-32 me-2 mt-3 py-1  bg-gray-200 text-sm position: relative'> <img src={send} 
+       className='h-3 position: absolute top-1.5 px-1'/>  Get directions</button>
+      <button type='button'  className='rounded-2xl border-2 me-2 py-1 px-2 bg-gray-200 text-sm'>See details</button>
+      <button type='button'  className='rounded-2xl border-2 me-2 py-1 px-1 bg-gray-200 text-sm'>Find more cafes nearby</button>
+      
+
+      <div className='flex mt-5 '>
+      <img src={action} className='h-3 m-1 ' /> 
+      <p className=' text-gray-700  text-sm ms-1 '>  More actions</p>
+      </div>
+
+      </div>
+
+        </div>
 
       </div>
     </>
