@@ -108,6 +108,7 @@ export default function SideNav() {
   };
 
   return (
+   
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" elevation={0} open={open} color="inherit">
@@ -322,5 +323,6 @@ export default function SideNav() {
        
       </Box>
     </Box>
+    
   );
 }

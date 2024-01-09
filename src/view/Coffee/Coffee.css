@@ -1,0 +1,14 @@
+.coffee-container{
+    display: flex;
+
+    justify-content: space-evenly; 
+}
+
+@media screen and (max-width: 1200px) {
+    .coffee-container{
+          display: block;
+          width: 1300px;
+          margin-bottom: 20px;
+    
+    }
+}

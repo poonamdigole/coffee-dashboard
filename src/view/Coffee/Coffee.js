@@ -5,6 +5,7 @@ import Mic from "./microphone.png"
 import Pin from './pin.png'
 import action from './category.png'
 import send from "./send.png"
+import './Coffee.css'
 import chart from "./chart.png"
 // import ChartBar from '../../components/ChartBar/ChartBar';
 
@@ -14,7 +15,7 @@ const Coffee = () => {
       <Box height={100} />
    
     
-      <div className='flex justify-between mx-0 '>
+      <div className='coffee-container my-5 '>
 
         <div className='h-1/3 border-2 rounded-lg w-1/3 bg-white me-4'>
           <div className='bg-gray-200 py-2 px-6 text-left	position: relative'>
@@ -83,7 +84,7 @@ const Coffee = () => {
         <img src={Mic} className='h-3.5	position: absolute right-8 top-3 ' />
         </div>
      <div className='p-1'>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55908569.77857281!2d-12.272493600000024!3d31.2099701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5a777f9a75d%3A0xa89ec96a0e40fbeb!2sPhilz%20Coffee!5e0!3m2!1sen!2sin!4v1704784377508!5m2!1sen!2sin" width="440" height="180"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55908569.77857281!2d-12.272493600000024!3d31.2099701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5a777f9a75d%3A0xa89ec96a0e40fbeb!2sPhilz%20Coffee!5e0!3m2!1sen!2sin!4v1704784377508!5m2!1sen!2sin" width="100%" height="180"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
      </div>
         <div className='text-left px-6 py-4'>
         
